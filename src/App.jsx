@@ -2,9 +2,11 @@ import React from 'react'
 import Navbar from './components/Navbar'
 
 const App = () => {
+
+  const [theme, setTheme] = useState('ligth')
   return (
     <div className='dark:bg-black relative'>
-      <Navbar />
+      <Navbar theme={theme} setTheme={setTheme} />
     </div>
   )
 }
