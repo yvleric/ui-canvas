@@ -8,6 +8,14 @@ const Navbar = ({ theme, setTheme }) => {
             <img src={theme === 'dark' ? assets.logo_dark : assets.logo}
                 className='w-32 sm:w-40' alt='' />
 
+
+            <div>
+                <a href="#" className='sm:hover:border-b-2 hover:border-gray-400 dark:hover:border-gray-200 pb-2'>Home</a>
+                <a href="#" className='sm:hover:border-b-2 hover:border-gray-400 dark:hover:border-gray-200 pb-2'>Recent</a>
+                <a href="#" className='sm:hover:border-b-2 hover:border-gray-400 dark:hover:border-gray-200 pb-2'>Services</a>
+                <a href="#" className='sm:hover:border-b-2 hover:border-gray-400 dark:hover:border-gray-200 pb-2'>Pricing</a>
+            </div>
+
         </div>
     )
 }
