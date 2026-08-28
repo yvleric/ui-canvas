@@ -8,16 +8,25 @@ const Navbar = ({ theme, setTheme }) => {
             <img src={theme === 'dark' ? assets.logo_dark : assets.logo}
                 className='w-32 sm:w-40' alt='' />
 
+            <div className='text-gray-700 dark:text-white sm:text-sm max-sm:w-60 max-sm:pl-10 
+            max-sm:fixed top-0 bottom-0 right-0 max-sm:min-h-screen max-sm:h-full max-sm:flex-col 
+            max-sm:bg-primary max-sm:text-white max-sm:pt-20 flex sm:items-center gap-5 transition-all'>
 
-            <div>
-                <a href="#" className='sm:hover:border-b-2 hover:border-gray-400 dark:hover:border-gray-200 pb-2'>Home</a>
-                <a href="#" className='sm:hover:border-b-2 hover:border-gray-400 dark:hover:border-gray-200 pb-2'>Recent</a>
-                <a href="#" className='sm:hover:border-b-2 hover:border-gray-400 dark:hover:border-gray-200 pb-2'>Services</a>
-                <a href="#" className='sm:hover:border-b-2 hover:border-gray-400 dark:hover:border-gray-200 pb-2'>Pricing</a>
+
+
+                <a href="#" className='sm:hover:border-b'>Home</a>
+                <a href="#" className='sm:hover:border-b'>Services</a>
+                <a href="#" className='sm:hover:border-b'>Our Work</a>
+                <a href="#" className='sm:hover:border-b'>Contact Us</a>
             </div>
 
+            <div>
+                <a href="contact-us" className='text-sm max-sm:hidden flex items-center gap-2 bg-primary text-white px-6 py-2 rounded-full cursor-pointer hover:scale-103 transition-all'>
+                    connect<img src={assets.arrow_icon} width={14} alt="" />
+                </a>
+            </div>
         </div>
     )
 }
 
-export default Navbar
+export default Navba
