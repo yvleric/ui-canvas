@@ -18,10 +18,10 @@ const Navbar = ({ theme, setTheme }) => {
 
                 <img src={assets.close_icon} alt="" className='w-5 absolute right-4 top-4 sm:hidden' onClick={() => setSidebarOpen(false)} />
 
-                <a href="#" className='sm:hover:border-b'>Home</a>
-                <a href="#" className='sm:hover:border-b'>Services</a>
-                <a href="#" className='sm:hover:border-b'>Our Work</a>
-                <a href="#" className='sm:hover:border-b'>Contact Us</a>
+                <a onClick={() => setSidebarOpen(false)} href="#" className='sm:hover:border-b'>Home</a>
+                <a onClick={() => setSidebarOpen(false)} href="#" className='sm:hover:border-b'>Services</a>
+                <a onClick={() => setSidebarOpen(false)} href="#" className='sm:hover:border-b'>Our Work</a>
+                <a onClick={() => setSidebarOpen(false)} href="#" className='sm:hover:border-b'>Contact Us</a>
             </div>
 
             <div className='flex items-center gap-2 sm:gap-4'>
