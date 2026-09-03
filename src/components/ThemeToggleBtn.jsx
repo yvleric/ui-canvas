@@ -2,6 +2,15 @@ import React from 'react'
 import assets from '../assets/assets';
 
 const ThemeToggleBtn = ({ theme, setTheme }) => {
+
+    useEffect(() => {
+        if (theme === 'dark') {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+        localStorage.setItem('theme', theme)
+    }, [theme])
     return (
         <>
             <button>
