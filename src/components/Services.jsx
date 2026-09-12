@@ -1,4 +1,6 @@
 import React from "react";
+import assets from "../assets/assets";
+import Title from "./Title";
 
 const Services = () => {
 
@@ -20,7 +22,7 @@ const Services = () => {
         },
         {
             title: 'Social media',
-            description: 'We help you build a strong social media presence and engage with your audience.',.',
+            description: 'We help you build a strong social media presence and engage with your audience.',
             icon: assets.social_icon,
         }
     ]
