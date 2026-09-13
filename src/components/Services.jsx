@@ -8,7 +8,7 @@ const Services = () => {
         {
             title: 'Advertising',
             description: 'We turn ideas into powerful digital solutions that connect, engage...',
-            icon: assets.ad_icon
+            icon: assets.ads_icon
         },
         {
             title: 'Content Marketing',
