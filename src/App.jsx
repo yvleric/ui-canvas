@@ -6,10 +6,12 @@ import Services from './components/Services'
 
 const App = () => {
 
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light')
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  })
 
   return (
-    <div className='dark:bg-black relative'>
+    <div className='min-h-screen bg-white dark:bg-black text-gray-800 dark:text-white relative transition-colors duration-300'>
       <Navbar theme={theme} setTheme={setTheme} />
       <Hero />
       <TrustedBy />
@@ -19,3 +21,4 @@ const App = () => {
 }
 
 export default App
+
